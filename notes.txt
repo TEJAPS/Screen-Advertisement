@@ -1,0 +1,5 @@
+Sorry, everyone reading this:
+DON'T STORE FILES THAT WAY:
+
+Explanation:
+This is such a bad way of storing files. Basically you're 100% vulnerable to DDOS attack because you used mysql_real_escape_string. If i send you 200MB file of '(quotation marks), your php script will consume lots of processor power to escape it. Learn prepared statements instead and forget about real_escape_string, as well as SQL Injection itself.﻿
